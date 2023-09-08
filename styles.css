@@ -1,0 +1,100 @@
+/* Reset some default styles for better consistency */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background image with soccer field lines */
+body {
+    background-image: url('soccer-field.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #FFF;
+    text-align: center;
+}
+
+/* Style the header */
+h1 {
+    font-size: 36px;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Style the user input form */
+form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Style form labels and inputs */
+label, select {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
+/* Style the prediction results */
+#prediction {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Style result text */
+#prediction p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Add a button for submitting the form */
+#submit-button {
+    background-color: #007BFF;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style footer */
+footer {
+    margin-top: 50px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #FFF;
+}
+
+/* Add some responsive styles for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+    form {
+        padding: 10px;
+    }
+    label, select {
+        font-size: 16px;
+    }
+    #submit-button {
+        font-size: 16px;
+    }
+    footer {
+        font-size: 14px;
+    }
+}

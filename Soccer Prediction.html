@@ -6,10 +6,28 @@
 </head>
 <body>
     <h1>Welcome to the Soccer Score Predictor</h1>
-    <!-- Add form for user input here -->
+    
+    
+       <!-- User Input Form -->
+    <form id="soccer-prediction-form">
+        <label for="team1">Select Team 1:</label>
+        <select id="team1" name="team1">
+            <!-- Options for Team 1 here -->
+        </select>
+
+        <label for="team2">Select Team 2:</label>
+        <select id="team2" name="team2">
+            <!-- Options for Team 2 here -->
+        </select>
+
+        <button type="button" id="predict-button">Predict Score</button>
+    </form>
+    
+    <!-- Display prediction results here -->
     <div id="prediction">
-        <!-- Display prediction results here -->
+        <!-- Results will be displayed here -->
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-

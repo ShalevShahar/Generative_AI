@@ -42,7 +42,7 @@ document.getElementById("predict-button").addEventListener("click", function() {
 
 
 function getPrediction(team1, team2) {
-    const apiKey = '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';
+    const apiKey = process.env.OPENAI_API_KEY;
     const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-003/completions'; // Specify the model here
 
     const prompt = `Guess the score of an imaginary soccer match between ${team1} and ${team2}. 

@@ -54,7 +54,7 @@ function getPrediction(team1, team2) {
         headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${apiKey}`,
-        },
+          },
         body: JSON.stringify({
             prompt,
             max_tokens: 150, // Adjust the max tokens based on the desired response length
